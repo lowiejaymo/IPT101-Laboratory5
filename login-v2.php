@@ -1,5 +1,13 @@
 <?php
 require_once 'googleconfig.php';
+require_once ('facebookconfig.php');
+
+
+
+
+$redirectTo = "http://localhost:8080/IPT101-Laboratory5/callback.php";
+$data = ['email'];
+$fullURL = $handler->getLoginUrl($redirectTo, $data);
 
 ?>
 
@@ -95,18 +103,11 @@ require_once 'googleconfig.php';
         <div class="social-auth-links text-center mt-2 mb-3">
 
 
-          <a href="#" class="btn btn-block btn-primary d-flex align-items-center justify-content-center">
+          <a class="btn btn-block btn-primary d-flex align-items-center justify-content-center" onclick="window.location = '<?php echo $fullURL ?>'">
             <i class="fab fa-brands fa-facebook-f mr-2"></i> Sign in using Facebook
           </a>
 
-
-          <!-- <div class="social-auth-links text-center mt-2 mb-3">
-            <a href="#"
-              class="btn btn-block btn-light d-flex align-items-center justify-content-center">
-              <img src="icons/google_icon.png" alt="Google Icon" class="mr-2" style="height: 1em;">
-              <span class="align-middle">Sign in using Google</span>
-            </a>
-          </div> -->
+          
           <div class="social-auth-links text-center mt-2 mb-3">
             <a href="<?php echo $client->createAuthUrl(); ?>"
               class="btn btn-block btn-light d-flex align-items-center justify-content-center">

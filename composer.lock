@@ -4,68 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23b1fb81af23f1cbd3e158f4f6799867",
+    "content-hash": "617f4a6388b6a3b302335203eba60fd3",
     "packages": [
-        {
-            "name": "facebook/graph-sdk",
-            "version": "5.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "38fd7187a6704d3ab14ded2f3a534ac4ee6f3481"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/38fd7187a6704d3ab14ded2f3a534ac4ee6f3481",
-                "reference": "38fd7187a6704d3ab14ded2f3a534ac4ee6f3481",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "~5.0",
-                "mockery/mockery": "~0.8",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Facebook\\": "src/Facebook/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Facebook Platform"
-            ],
-            "authors": [
-                {
-                    "name": "Facebook",
-                    "homepage": "https://github.com/facebook/facebook-php-sdk-v4/contributors"
-                }
-            ],
-            "description": "Facebook SDK for PHP",
-            "homepage": "https://github.com/facebook/facebook-php-sdk-v4",
-            "keywords": [
-                "facebook",
-                "sdk"
-            ],
-            "support": {
-                "issues": "https://github.com/facebook/php-graph-sdk/issues",
-                "source": "https://github.com/facebook/php-graph-sdk/tree/5.1.4"
-            },
-            "abandoned": true,
-            "time": "2016-05-13T17:28:30+00:00"
-        },
         {
             "name": "firebase/php-jwt",
             "version": "v6.10.0",
@@ -1323,6 +1263,70 @@
                 }
             ],
             "time": "2022-01-02T09:55:41+00:00"
+        },
+        {
+            "name": "viktorruskai/facebook-graph-sdk",
+            "version": "6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/viktorruskai/facebook-graph-sdk.git",
+                "reference": "c42e8577491a0d329c3765c6d1213d926eee33a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/viktorruskai/facebook-graph-sdk/zipball/c42e8577491a0d329c3765c6d1213d926eee33a0",
+                "reference": "c42e8577491a0d329c3765c6d1213d926eee33a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0|^8.1"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "~7.0",
+                "mockery/mockery": "~1.5",
+                "phpstan/phpstan": "1.6.x-dev",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Facebook/polyfills.php"
+                ],
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
+                },
+                {
+                    "name": "Viktor Ruskai",
+                    "homepage": "https://github.com/viktorruskai"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/viktorruskai/facebook-graph-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "support": {
+                "source": "https://github.com/viktorruskai/facebook-graph-sdk/tree/6.0.2"
+            },
+            "time": "2022-07-13T13:34:34+00:00"
         }
     ],
     "packages-dev": [],

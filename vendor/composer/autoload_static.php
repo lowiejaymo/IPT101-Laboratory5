@@ -13,6 +13,7 @@ class ComposerStaticInit3e6e79e410cd98a8d86f36f772fe3690
         '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
+        'e2df6b403a07147fc8cee0e8bc79e1ad' => __DIR__ . '/..' . '/viktorruskai/facebook-graph-sdk/src/Facebook/polyfills.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -108,7 +109,7 @@ class ComposerStaticInit3e6e79e410cd98a8d86f36f772fe3690
         ),
         'Facebook\\' => 
         array (
-            0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
+            0 => __DIR__ . '/..' . '/viktorruskai/facebook-graph-sdk/src/Facebook',
         ),
     );
 

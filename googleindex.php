@@ -71,7 +71,7 @@ if (isset ($_GET['code'])) {
       exit;
   }
   } else {
-    header("Location: login-v2.php?error=Google Account is not registered.");
+    header("Location: login-v2.php?error=Email Address is not registered.");
     exit();
   }
 }
