@@ -13,7 +13,7 @@
     <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
       <div class="image">
         <a href="profile.php">
-          <img class="rounded-image" src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>"
+          <img class="rounded-image" src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>?<?php echo time(); ?>"
             alt="User profile picture">
         </a>
       </div>

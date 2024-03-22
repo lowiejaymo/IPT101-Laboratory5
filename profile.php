@@ -115,7 +115,7 @@ if (
                       <div class="text-center"> <!-- Center the column content -->
                         <!-- displaying the profile picture -->
                         <img class="profile-picture img-fluid rounded-circle"
-                          src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>"
+                          src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>?<?php echo time(); ?>"
                           alt="User profile picture">
                       </div>
                     </div>
@@ -855,7 +855,7 @@ if (
                                 <div class="image">
                                   <!-- displaying current profile picture -->
                                   <img class="change-profile-picture img-fluid"
-                                    src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>"
+                                    src="profile-picture/<?php echo $_SESSION['profile_picture']; ?>?<?php echo time(); ?>"
                                     alt="User profile picture">
                                 </div>
                               </div>
