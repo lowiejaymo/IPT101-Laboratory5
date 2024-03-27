@@ -2,10 +2,14 @@
 
 require_once 'vendor/autoload.php';
 
-// init configuration
-$clientID = '419355197556-i50nniroktkdve0c5tu2c8sbasv33qir.apps.googleusercontent.com';
-$clientSecret = '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';
-$redirectUri = 'http://localhost:8080/ipt101-laboratory5/googleindex.php';
+// Load environment variables from .env
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Access environment variables
+$clientID = $_ENV['GOOGLE_CLIENT_ID'];
+$clientSecret = $_ENV['GOOGLE_CLIENT_SECRET'];
+$redirectUri = $_ENV['GOOGLE_REDIRECT_URI'];
 
 
 // create Client Request to access Google API

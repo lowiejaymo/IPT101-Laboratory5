@@ -165,11 +165,9 @@ if (
                       <li class="list-group-item">
                         <!-- Displaying Phone Number -->
                         <b>Phone Number</b>
-                        <?php if ($_SESSION['phone_number'] != '0'): ?>
                           <a class="float-right">
                             <?php echo $_SESSION['phone_number']; ?>
                           </a>
-                        <?php endif; ?>
                       </li>
 
                       <li class="list-group-item">
