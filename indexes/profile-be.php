@@ -65,7 +65,7 @@ if (isset($_POST['profile_update'])) {
        $update_other_info_sql = "UPDATE user_profile SET phone_number=?, Birthday=?, gender=?, street_building_house=?, 
            Barangay=?, City=?, Province=?, Region=?, Postal_code=?, Occupation=?, Education=?, Skills=?, Notes=? WHERE user_id=?";
        $stmt_update_other_info = mysqli_prepare($conn, $update_other_info_sql);
-       mysqli_stmt_bind_param($stmt_update_other_info, "isssssssissssi",
+       mysqli_stmt_bind_param($stmt_update_other_info, "ssssssssissssi",
            $_POST['phone_number'],
            $_POST['birthday'],
            $_POST['gender'],
