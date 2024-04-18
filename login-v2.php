@@ -3,7 +3,7 @@ require_once 'googleconfig.php';
 require_once ('facebookconfig.php');
 
 
-$redirectTo = "http://localhost:8080/IPT101-Laboratory5/callback.php";
+$redirectTo = "http://localhost/IPT101-Laboratory5/callback.php";
 $data = ['email'];
 $fullURL = $handler->getLoginUrl($redirectTo, $data);
 
